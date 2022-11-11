@@ -1,0 +1,14 @@
+inurl: Dictates the crawler to search for URLs that contain a specified keyword.
+allintext: This parameter searches for user-specified text in a webpage.
+filetype: This parameter tells the crawler to look for and display a specific file type.
+intitle: Scrapes for sites containing specified keywords in the title.
+site: Lists all the indexed URLs for the specified site.
+cache: When paired with the site parameter, this one displays the cached or older version of a website.
+Pipe operator (|): This logical operator will list results that contain either of two specified search terms.
+Wildcard operator (*): This is a wildcard operator that searches for pages that contain anything connected to your search term.
+Subtract operator (-): This eliminates unwanted results from your search.
+
+
+
+1. using intitle to get a webcam hack of an IP address
+check on ISSUES HERE to find the stsps taken and screenshot used to get the ip hack of an image webcam
