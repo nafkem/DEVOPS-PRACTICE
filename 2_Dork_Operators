@@ -1,0 +1,63 @@
+List ten Google Dork operators/commands with their function and a simple usage of the operators.
+1.	Cache Command
+A cache is a metadata that speeds up the page search process. Google stores some data in its cache, such as current and previous versions of the websites. 
+This cache holds much useful information that the developers can use. Some developers use cache to store information for their testing purpose that can be changed 
+with new changes to the website;
+cache: website address (enter key words)
+cache:https://xyz.nu.edu.pk/Login XYZ (Once you get the output, you can see that the keyword will be highlighted)
+
+2.	Intext and Allintext Command
+Is used to find a specific text from a webpage, you can use the intext command in two ways. First, you can provide a single keyword in the results. 
+Second, you can look for multiple keywords. 
+-syntax for a single keyword:
+ Intext: usernames
+-suppose you want to look for the pages with keywords “username” and “password:” you can use the following query.
+allintext:”username” “password”
+
+3. Filetype Command
+This is one of the most important Dorking options as it filters out the most important files from several files. For example, you can apply a filter just to 
+retrieve PDF files. If you are a developer, you can go for the log files, allowing them to keep track easily by applying the right filter.
+filetype:log. 
+You will get all types of log files, but you still need to find the right one from thousands of logs. So, to narrow down your file search, you be more specific
+with the type of file you use with this syntax:
+
+allintext:username filetype:log
+
+4. Intitle Command
+Sometimes you want to filter out the documents based on HTML page titles. The main keywords exist within the title of the HTML page, representing the whole page. 
+So, we can use this command to find the required information. Suppose you are looking for documents that have information about IP Camera. You have to write a 
+query that will filter out the pages based on your chosen keyword. You can use the following syntax:
+intitle:”ip camera”
+You can also use multiple keywords with this query to get more specific results, separating each keyword with double-quotes. First, Google will retrieve all the 
+pages and then apply the filter to that retrieved result set. It will discard the pages that do not have the right keyword. You can use the following syntax for that:
+allintitle:”ip camera” “dvr”ting (each keyword with double-quotes.)
+
+5. inurl Command
+This command works similar to the intitle command; however, the inurl command filters out the documents based on the URL text. Those keywords are available on the 
+HTML page, with the URL representing the whole page. You can use this command to filter out the documents. Suppose you want the documents with the information related 
+to IP Camera. You can simply use the following query to tell google and filter out all the pages based on that keyword. You can also provide multiple keywords for
+more precise results; allinurl:tesla lambo
+
+6. ext Command
+If you want to search for a specific type of document, you can use the ext command. Suppose you want to write an article on a specific topic, but you cannot start 
+right away without researching that topic. Mostly the researched articles are available in PDF format. You can specify the type of the file within your dork command.
+Here, ext stands for an extension. This command works similarly to the filetype command. Now using the ext command, you can narrow down your search that is limited
+to the pdf files only. 
+You can use the following syntax: site:https://www.ford.com/ ext:pdf
+
+7. Inposttitle 
+You can use this command when you want to search for a certain term within the blog. It is useful for blog search. 
+For example: inposttitle:weight loss goals
+Allintitle :Say you run a blog, and want to research other blogs in your niche. This command will help you look for other similar, high-quality blogs.
+allintitle:how to write content for seo
+Allinanchor 
+You can use this command to do research on pages that have all the terms after the “inanchor” in the anchor text that links back to the page. 
+
+8. | this shows all sites that contain either or both specified words in the query
+    hacking | Google dork
+
+9. +  Concatenates words to detect pages using more than one specific key
+      hacking + Google dork
+
+10. - Used to avoid displaying results containing certain words
+    hacking - dork
